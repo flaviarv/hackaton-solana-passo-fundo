@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "prisma": "^8.0.0-rc.12"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "@solana/spl-token": "^0.4.15",
+    "@solana/spl-token-metadata": "^0.1.6",
+    "@solana/web3.js": "^1.98.4",
+    "dotenv": "^17.4.2"
+  },
+  "scripts": {
+    "postinstall": "prisma skills sync || exit 0"
+  }
+}
