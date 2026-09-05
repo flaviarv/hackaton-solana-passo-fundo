@@ -1,4 +1,59 @@
+# ==========================================
+# 1. Dependências
+# ==========================================
 node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# ==========================================
+# 2. Segurança Crítica & Web3 (MUITO IMPORTANTE)
+# ==========================================
+# Arquivos de variáveis de ambiente
 .env
+.env.local
+.env.*.local
+*.env
+
+# Chaves privadas da Solana e carteiras (keypairs)
+*.json.key
+*keypair*.json
+id.json
+payer.json
+authority.json
+wallet.json
+secrets/
+keys/
+
+# ==========================================
+# 3. Builds e Compilações
+# ==========================================
 dist/
+dist-ssr/
+build/
+out/
+*.local
+
+# ==========================================
+# 4. Logs e Diagnósticos
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+# 5. Sistema Operacional & Editores
+# ==========================================
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
