@@ -1,0 +1,33 @@
+{
+  "name": "agro-trace-brasil-server",
+  "version": "1.0.0",
+  "description": "API back-end para rastreabilidade agropecuária - Agro Trace Brasil",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
+  },
+  "keywords": [
+    "agritech",
+    "traceability",
+    "nodejs",
+    "express"
+  ],
+  "dependencies": {
+    "@solana/spl-token": "^0.3.9",
+    "@solana/spl-token-metadata": "^0.1.6",
+    "@solana/web3.js": "^1.95.8",
+    "bip39": "^3.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "ed25519-hd-key": "^2.0.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "oxlint": "^0.15.0"
+  }
+}

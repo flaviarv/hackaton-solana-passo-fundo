@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Carteiras e chaves criptográficas da Solana (Crítico)
+*.json.key
+*keypair*.json
+id.json
+payer.json
+authority.json
+wallet.json
+keys/
+secrets/
+
+# Arquivos de dados locais / mocks (se houver persistência em arquivo)
+*.sqlite
+*.sqlite3
+data/
+db.json
+
+# Logs e diagnósticos
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
